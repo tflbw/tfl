@@ -24,7 +24,7 @@ export default function Navbar() {
                     <div className="flex items-center">
                         <Link href="/" className="flex-shrink-0 flex items-center">
                             {/* Overlapping Logo Container */}
-                            <div className="relative h-16 sm:h-24 md:h-32 w-auto aspect-[3/1]">
+                            <div className="relative h-20 sm:h-24 md:h-32 w-auto aspect-[3/1] max-w-[20rem]">
                                 {/* Using the logo we copied */}
                                 <Image
                                     src="/logo-new.png"
