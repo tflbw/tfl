@@ -28,8 +28,12 @@ export default function ContactPage() {
                                 <div>
                                     <h3 className="font-bold text-tfl-blue text-lg">Visit Us</h3>
                                     <p className="text-gray-600">
+                                        Lot 18906, Industrial Site<br />
+                                        Selebi Phikwe Central 09267<br />
+                                        Company Reg. No. BW00001670917<br /><br />
                                         Plot No. 54358 Building Marula<br />
-                                        Prime Plaza CBD, Gaborone, Botswana
+                                        Prime Plaza CBD, Gaborone
+
                                     </p>
                                 </div>
                             </div>
@@ -50,7 +54,10 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-tfl-blue text-lg">Email Us</h3>
-                                    <p className="text-gray-600">info@tfl.co.bw</p>
+                                    <p className="text-gray-600">
+                                        admin@tfl.co.bw<br />
+                                        info@tfl.co.bw
+                                    </p>
                                 </div>
                             </div>
                         </div>
