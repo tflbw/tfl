@@ -44,9 +44,10 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li>Lot 18906, Industrial Site</li>
                             <li>Selebi Phikwe Central 09267</li>
+                            
                             <li>Plot No. 54358 Building Marula</li>
                             <li>Prime Plaza CBD, Gaborone</li>
-                            <li>info@tfl.co.bw</li>
+                            <li>admin@tfl.co.bw</li>
                             <li>+267 75 624 347</li>
                         </ul>
                     </div>
