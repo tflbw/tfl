@@ -39,12 +39,13 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className="space-y-4">
                         <h4 className="font-bold mb-4 text-tfl-red">Contact</h4>
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li>Lot 18906, Industrial Site</li>
                             <li>Selebi Phikwe Central 09267</li>
-                            
+                        </ul>
+                        <ul className="space-y-2 text-sm text-gray-300">
                             <li>Plot No. 54358 Building Marula</li>
                             <li>Prime Plaza CBD, Gaborone</li>
                             <li>admin@tfl.co.bw</li>
