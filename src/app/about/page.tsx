@@ -31,7 +31,7 @@ export default function AboutPage() {
                     <div className="relative h-[400px] w-full bg-gray-200 rounded-lg overflow-hidden">
                         {/* Placeholder for about image */}
                         <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-100">
-                            [Office/Team Image Placeholder]
+                            <Image src="/tfl2.png" alt="About" fill className="object-cover" />
                         </div>
                     </div>
                 </div>

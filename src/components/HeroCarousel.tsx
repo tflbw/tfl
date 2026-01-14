@@ -9,29 +9,29 @@ import Link from 'next/link'
 
 const slides = [
     {
-        image: '/hero/truck.png',
-        title: 'Timely Delivery',
-        subtitle: 'Precise direction. Structural strength. Your trusted partner in global logistics.'
+        image: '/hero/rock-deposit.png',
+        title: 'Mining Support',
+        subtitle: 'Streamlined handling and processing support for the mining industry.'
     },
     {
-        image: '/hero/port.png',
-        title: 'Global Reach',
-        subtitle: 'Connecting your business to the world through our extensive maritime network.'
+        image: '/hero/digger-canyon.png',
+        title: 'Heavy Excavation',
+        subtitle: 'Precision equipment for complex earthworks and infrastructure projects.'
     },
     {
-        image: '/hero/van.jpg',
-        title: 'Last Mile Solutions',
-        subtitle: 'Ensuring your goods reach their final destination safely and on time.'
+        image: '/hero/digger-desert.png',
+        title: 'Remote Solutions',
+        subtitle: 'Expert logistics and plant hire capable of operating in any environment.'
     },
     {
-        image: '/hero/digital.png',
-        title: 'Digital Logistics',
-        subtitle: 'Real-time tracking and state-of-the-art technology for your peace of mind.'
+        image: '/hero/rock-truck-mine.png',
+        title: 'Earth Moving',
+        subtitle: 'Heavy-duty machinery dedicated to maximizing your operational output.'
     },
     {
-        image: '/hero/warehouse.jpg',
-        title: 'Warehousing',
-        subtitle: 'Secure and efficient storage solutions tailored to your inventory needs.'
+        image: '/hero/truck-black.png',
+        title: 'Logistics Fleet',
+        subtitle: 'Versatile transportation options connecting your business to the region.'
     }
 ]
 
