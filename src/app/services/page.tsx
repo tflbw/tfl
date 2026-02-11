@@ -6,40 +6,52 @@ import { Plane, Ship, Truck, Package, FileCheck, Anchor, ArrowRight } from "luci
 export default function ServicesPage() {
     const services = [
         {
-            title: "Air Freight",
+            title: "International Freight Forwarding",
             icon: <Plane className="w-12 h-12 text-tfl-red" />,
-            description: "Fast and reliable air cargo services for time-sensitive shipments. Global network ensuring your goods reach any destination on time.",
-            features: ["Express delivery", "Door-to-door service", "Charter flights", "Cargo insurance"]
+            description: "A multi-stage process involving transport coordination, customs clearing, and regulatory compliance. Connecting Botswana to global markets.",
+            features: ["Transport Coordination", "Risk Management", "End-to-end Logistics", "Tracking & Visibility"]
         },
         {
-            title: "Sea Freight",
-            icon: <Ship className="w-12 h-12 text-tfl-red" />,
-            description: "Cost-effective ocean freight solutions for large volume shipments. FCL (Full Container Load) and LCL (Less than Container Load) options available.",
-            features: ["FCL & LCL", "Break bulk", "Port-to-port", "Container tracking"]
-        },
-        {
-            title: "Road Transport",
-            icon: <Truck className="w-12 h-12 text-tfl-red" />,
-            description: "Comprehensive road network coverage for domestic and cross-border distribution. Efficient fleet management for safe delivery.",
-            features: ["FTL & LTL", "Refrigerated transport", "Cross-border logistics", "GPS tracking"]
-        },
-        {
-            title: "Warehousing",
-            icon: <Package className="w-12 h-12 text-tfl-red" />,
-            description: "Secure storage solutions with modern inventory management systems. Flexible short-term and long-term storage options.",
-            features: ["Inventory management", "Pick & pack", "Distribution services", "Climate control"]
-        },
-        {
-            title: "Customs Clearance",
-            icon: <FileCheck className="w-12 h-12 text-tfl-red" />,
-            description: "Expert handling of customs documentation and procedures. We ensure smooth clearance to avoid delays and penalties.",
-            features: ["Import/Export clearance", "Documentation compliance", "Duty assessment", "Consultancy"]
-        },
-        {
-            title: "Project Cargo",
+            title: "Production Support Logistics",
             icon: <Anchor className="w-12 h-12 text-tfl-red" />,
-            description: "Specialized handling for oversized, heavy, or complex equipment. Tailored logistics planning for industrial projects.",
-            features: ["Heavy lift", "Route surveys", "Engineering support", "Turnkey solutions"]
+            description: "Critical support for industries like mining and manufacturing. We handle the movement of raw materials and finished products to keep your production line moving.",
+            features: ["Inbound Logistics", "Outbound Logistics", "Raw Materials", "Finished Goods"]
+        },
+        {
+            title: "Cross-Border Haulage",
+            icon: <Truck className="w-12 h-12 text-tfl-red" />,
+            description: "Specialized fleet for bulk commodities and finished products. Facilitating trade across SADC with Inbound and Outbound logistics solutions.",
+            features: ["Bulk Commodities", "Oversized Loads", "Hazardous Materials", "GPS Tracking"]
+        },
+        {
+            title: "Last-Mile Delivery",
+            icon: <Package className="w-12 h-12 text-tfl-red" />,
+            description: "Ensuring your goods reach their final destination. We handle the crucial final step of the supply chain with precision and care.",
+            features: ["Last-Mile Delivery", "Distribution", "Retail Logistics", "Door-to-Door"]
+        },
+        {
+            title: "Warehousing & Consolidation",
+            icon: <Package className="w-12 h-12 text-tfl-red" />,
+            description: "Secure storage and consolidation services. Future expansion includes warehouse and plant real estate subdivision.",
+            features: ["Inventory Management", "Consolidation", "Distribution", "Secure Facilities"]
+        },
+        {
+            title: "Customs Clearing",
+            icon: <FileCheck className="w-12 h-12 text-tfl-red" />,
+            description: "Expert handling of customs documentation and border procedures. We ensure regulatory compliance and risk management.",
+            features: ["Import/Export Clearance", "Documentation", "Duty Management", "Compliance"]
+        },
+        {
+            title: "Project & Contract Logistics",
+            icon: <Anchor className="w-12 h-12 text-tfl-red" />,
+            description: "End-to-end logistics for large-scale projects, including mine rehabilitation, plant dismantling, and movement of heavy machinery.",
+            features: ["Mine Logistics", "Plant Dismantling", "Heavy Lift", "Turnkey Solutions"]
+        },
+        {
+            title: "Multimodal Logistics",
+            icon: <Ship className="w-12 h-12 text-tfl-red" />,
+            description: "Leveraging regional trade corridors through South Africa, Namibia, Mozambique, and Zimbabwe. Seamless connections between landlocked Botswana and key ports.",
+            features: ["Sea & Rail Integration", "Port Services", "Container Handling", "Export Facilitation"]
         }
     ];
 

@@ -20,7 +20,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold mb-2 text-tfl-blue">Time</h3>
             <p className="text-gray-600">
-              The clock hands never stop, and neither do we. We prioritize timely delivery to ensure your business keeps moving forward.
+              We prioritize timely delivery to ensure your business keeps moving forward, handling cross-border delays and bottlenecks efficiently to meet your deadlines.
             </p>
           </div>
           <div className="p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold mb-2 text-tfl-blue">Direction</h3>
             <p className="text-gray-600">
-              A clear sense of direction. We navigate complex logistics networks to deliver your cargo to its specific destination.
+              Strategically located to leverage Botswana’s position as a central hub in SADC, we facilitate seamless connections between landlocked Botswana and global markets.
             </p>
           </div>
           <div className="p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold mb-2 text-tfl-blue">Strength</h3>
             <p className="text-gray-600">
-              Like the lion, we stand for structure and strength. Our robust network ensures the safety and security of your goods.
+              With an unwavering focus on safety and service quality, our robust network ensures the security of your goods, from mining equipment to FMCG.
             </p>
           </div>
         </div>
@@ -57,13 +57,17 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {['Air Freight', 'Sea Freight', 'Road Transport', 'Warehousing', 'Customs Clearance', 'Project Cargo'].map((service) => (
-            <div key={service} className="group bg-white p-6 rounded-xl border border-gray-100 hover:border-tfl-red/20 transition-all hover:shadow-lg cursor-pointer">
-              <h3 className="text-xl font-bold text-tfl-blue group-hover:text-tfl-red transition-colors mb-2">{service}</h3>
-              <p className="text-gray-500 mb-4">Reliable and efficient {service.toLowerCase()} solutions.</p>
-              <span className="text-sm font-medium text-tfl-red flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                Learn more <ArrowRight className="ml-1 w-3 h-3" />
-              </span>
+          {[
+            { title: 'International Freight Forwarding', desc: 'Expert coordination of global shipments via air, sea, and rail.' },
+            { title: 'Cross-Border Haulage', desc: 'Secure transport of bulk and consolidated cargo across the SADC region.' },
+            { title: 'Production Support Logistics', desc: 'Critical supply chain support for mining and manufacturing industries.' },
+            { title: 'Warehousing & Consolidation', desc: 'Safe storage and inventory management in Gaborone and Selebi-Phikwe.' },
+            { title: 'Customs Clearing', desc: 'Seamless border clearances with full regulatory compliance and risk management.' },
+            { title: 'Project & Contract Logistics', desc: 'End-to-end management for large-scale industrial and infrastructure projects.' },
+          ].map((service) => (
+            <div key={service.title} className="group bg-white p-6 rounded-xl border border-gray-100 hover:border-tfl-red/20 transition-all hover:shadow-lg cursor-pointer">
+              <h3 className="text-xl font-bold text-tfl-blue group-hover:text-tfl-red transition-colors mb-2">{service.title}</h3>
+              <p className="text-gray-500 mb-4">{service.desc}</p>
             </div>
           ))}
         </div>

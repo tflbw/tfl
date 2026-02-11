@@ -10,28 +10,28 @@ import Link from 'next/link'
 const slides = [
     {
         image: '/hero/rock-deposit.png',
-        title: 'Mining Support',
-        subtitle: 'Streamlined handling and processing support for the mining industry.'
+        title: 'Specialized Logistics',
+        subtitle: 'Connecting Botswana to the world. We move what matters — where it matters — without compromise.'
     },
     {
         image: '/hero/digger-canyon.png',
-        title: 'Heavy Excavation',
-        subtitle: 'Precision equipment for complex earthworks and infrastructure projects.'
+        title: 'Mining Support',
+        subtitle: 'End-to-end logistics solutions for the mining industry, from equipment transport to mineral exports.'
     },
     {
         image: '/hero/digger-desert.png',
-        title: 'Remote Solutions',
-        subtitle: 'Expert logistics and plant hire capable of operating in any environment.'
+        title: 'Cross-Border Haulage',
+        subtitle: 'Facilitating seamless trade across SADC with our strategic hub in Botswana.'
     },
     {
         image: '/hero/rock-truck-mine.png',
-        title: 'Earth Moving',
-        subtitle: 'Heavy-duty machinery dedicated to maximizing your operational output.'
+        title: 'Project Cargo',
+        subtitle: 'Expert handling of oversized loads and complex industrial projects.'
     },
     {
         image: '/hero/truck-black.png',
-        title: 'Logistics Fleet',
-        subtitle: 'Versatile transportation options connecting your business to the region.'
+        title: 'Global Forwarding',
+        subtitle: 'Connecting you to key markets in Asia, Europe, the Middle East, and the Americas.'
     }
 ]
 

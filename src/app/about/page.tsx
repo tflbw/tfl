@@ -6,7 +6,7 @@ export default function AboutPage() {
         <div className="w-full">
             <div className="bg-tfl-blue py-20 text-center text-white">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">About TFL</h1>
-                <p className="text-xl max-w-2xl mx-auto text-gray-300">Your trusted partner in global logistics since [Year].</p>
+                <p className="text-xl max-w-2xl mx-auto text-gray-300">Your trusted partner in global logistics since 2024.</p>
             </div>
 
             <Section>
@@ -15,24 +15,19 @@ export default function AboutPage() {
                         <h2 className="text-3xl font-bold text-tfl-blue mb-6">Who We Are</h2>
                         <div className="space-y-4 text-gray-600 leading-relaxed">
                             <p>
-                                TFL Logistics is a premier logistics provider dedicated to delivering excellence in every shipment.
-                                Inspired by the lion, our brand embodies structure, strength, and precise direction.
+                                Formed on February 16, 2024, Tau Freight and Logistics (TFL) is a Botswana-based logistics provider specializing in the transportation of goods, light and heavy, oversized loads, and bulk commodities. We focus on international freight forwarding, end-to-end logistics, and cross-border haulage across Botswana and the SADC region.
                             </p>
                             <p>
-                                We understand the complexities of global trade and supply chain management.
-                                Our team of experts is committed to providing timely deliveries tailored to meet the specific needs of our clients.
+                                TFL is strategically situated to leverage the opportunities presented by Botswana’s geographical advantage as a central hub within SADC. We aim to address critical logistical challenges, including cross-border delays and bottlenecks in rail and port services, particularly in Durban.
                             </p>
                             <p>
-                                With a robust network and a customer-centric approach, we navigate the challenges of logistics
-                                so you can focus on growing your business.
+                                With a robust network and a customer-centric approach, we facilitate seamless connections between landlocked Botswana and global markets in Asia, Europe, the Middle East, and the Americas.
                             </p>
                         </div>
                     </div>
                     <div className="relative h-[400px] w-full bg-gray-200 rounded-lg overflow-hidden">
-                        {/* Placeholder for about image */}
-                        <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-100">
-                            <Image src="/tfl2.png" alt="About" fill className="object-cover" />
-                        </div>
+                        {/* Placeholder for about image - Fig 13 from Business Plan? */}
+                        <Image src="/services/fig-11.png" alt="Gaborone Container Terminal Handling" fill className="object-cover" />
                     </div>
                 </div>
             </Section>
@@ -42,15 +37,13 @@ export default function AboutPage() {
                     <div className="bg-white p-8 rounded-lg shadow-sm border-l-4 border-tfl-red">
                         <h3 className="text-2xl font-bold text-tfl-blue mb-4">Our Mission</h3>
                         <p className="text-gray-600">
-                            To provide reliable, efficient, and innovative logistics solutions that empower businesses to connect with the world.
-                            We strive for excellence in every delivery, ensuring time-critical execution and structural integrity in our operations.
+                            To be one of the contributors to the logistics backbone of Botswana’s resource-driven industries and their link to local and foreign markets, especially in the drive for a Logistics Hub.
                         </p>
                     </div>
                     <div className="bg-white p-8 rounded-lg shadow-sm border-l-4 border-tfl-blue">
                         <h3 className="text-2xl font-bold text-tfl-blue mb-4">Our Vision</h3>
                         <p className="text-gray-600">
-                            To be the leading logistics partner globally, recognized for our strength, reliability, and commitment to customer success.
-                            We aim to set the standard for timely delivery and operational precision in the industry.
+                            To become Botswana’s leading name in specialized, secure, and smart logistics solutions. We aim to move what matters — where it matters — without compromise.
                         </p>
                     </div>
                 </div>
@@ -65,11 +58,8 @@ export default function AboutPage() {
                     </div>
                     <div className="flex-1 text-center md:text-left">
                         <h2 className="text-2xl font-bold text-tfl-blue mb-2">Leadership</h2>
-                        <h3 className="text-xl font-bold text-gray-900 mb-1">Moduku Motshegwa</h3>
-                        <p className="text-tfl-red font-medium mb-4">Director</p>
                         <p className="text-gray-600 max-w-2xl">
-                            Leading TFL Logistics with a vision for excellence and a commitment to reliability.
-                            Under his direction, the company continues to grow as a pillar of strength in the logistics industry.
+                            Driving TFL's vision to be the logistics backbone of Botswana. Focused on strategic expansion into Zambia, Namibia, and Mozambique, and fostering partnerships to support the region's resource-driven industries.
                         </p>
                     </div>
                 </div>

@@ -1,34 +1,39 @@
 import { Section } from "@/components/ui/Section";
+import Image from "next/image";
 
 export default function ProjectsPage() {
     const projects = [
         {
             id: 1,
-            title: "Global Machinery Transport",
-            category: "Project Cargo",
-            stats: "500 Tons",
-            description: "Successfully transported heavy industrial machinery from Europe to Asia via sea freight.",
+            title: "Pula Steel Manufacturing",
+            category: "Manufacturing Logistics",
+            stats: "2000+ Tons/Month",
+            description: "Transport of raw materials (scrap/sponge iron) and finished steel billets. Supporting vertical integration and export diversification strategies.",
+            image: "/services/fig-1.jpg"
         },
         {
             id: 2,
-            title: "Pharmaceutical Distribution",
-            category: "Air Freight",
-            stats: "Temperature Controlled",
-            description: "Urgent delivery of time-sensitive pharmaceutical supplies during peak demand.",
+            title: "Sherashiya (BCL) Liquidation",
+            category: "Project Cargo",
+            stats: "1M+ Tons Assets",
+            description: "Complex logistics for asset acquisition, including dismantling mine buildings, transporting hazardous materials (tailings/slag), and moving heavy machinery.",
+            image: "/services/fig-4.png"
         },
         {
             id: 3,
-            title: "Automotive Parts Logistics",
-            category: "Supply Chain",
-            stats: "JIT Delivery",
-            description: "Managed just-in-time delivery network for a major automotive manufacturer.",
+            title: "Regional Expansion",
+            category: "Strategic Growth",
+            stats: "SADC Network",
+            description: "Expanding operations into Zambia, Namibia, and Mozambique. Facilitating bulk transport services and project logistics across the region.",
+            image: "/services/fig-10.jpg"
         },
         {
             id: 4,
-            title: "Retail Warehouse Management",
-            category: "Warehousing",
-            stats: "10,000 sq ft",
-            description: "Optimized inventory flow and storage for a leading retail chain."
+            title: "Mining Sector Support",
+            category: "Mining Logistics",
+            stats: "End-to-End",
+            description: "Comprehensive logistics backbone for Botswana's resource-driven industries. Handling oversized loads and critical mining equipment.",
+            image: "/services/fig-11.png"
         }
     ];
 
@@ -43,11 +48,14 @@ export default function ProjectsPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project) => (
                         <div key={project.id} className="group relative overflow-hidden rounded-xl bg-gray-900 aspect-[4/3] flex items-end">
-                            {/* Placeholder Background */}
+                            {/* Background Image */}
+                            <Image
+                                src={project.image}
+                                alt={project.title}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
-                            <div className="absolute inset-0 bg-gray-800 flex items-center justify-center text-gray-600 z-0 group-hover:scale-105 transition-transform duration-500">
-                                [Project Image {project.id}]
-                            </div>
 
                             <div className="relative z-20 p-8 w-full">
                                 <span className="inline-block px-3 py-1 bg-tfl-red text-white text-xs font-bold uppercase tracking-wider rounded-sm mb-3">
