@@ -27,7 +27,7 @@ export default function AboutPage() {
                     </div>
                     <div className="relative h-[400px] w-full bg-gray-200 rounded-lg overflow-hidden">
                         {/* Placeholder for about image - Fig 13 from Business Plan? */}
-                        <Image src="/services/fig-11.png" alt="Gaborone Container Terminal Handling" fill className="object-cover" />
+                        <Image src="/tfl2.png" alt="TFL branded truck" fill className="object-cover" />
                     </div>
                 </div>
             </Section>
@@ -58,6 +58,8 @@ export default function AboutPage() {
                     </div>
                     <div className="flex-1 text-center md:text-left">
                         <h2 className="text-2xl font-bold text-tfl-blue mb-2">Leadership</h2>
+                        <h3 className="text-xl font-bold text-gray-900 mb-1">Moduku Motshegwa</h3>
+                        <p className="text-tfl-red font-medium mb-4">Director</p>
                         <p className="text-gray-600 max-w-2xl">
                             Driving TFL's vision to be the logistics backbone of Botswana. Focused on strategic expansion into Zambia, Namibia, and Mozambique, and fostering partnerships to support the region's resource-driven industries.
                         </p>
