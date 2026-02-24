@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const slides = [
     {
-        image: '/hero/rock-deposit.png',
+        image: '/mining ADT.png',
         title: 'Specialized Logistics',
         subtitle: 'Connecting Botswana to the world. We move what matters — where it matters — without compromise.'
     },
@@ -75,14 +75,7 @@ export default function HeroCarousel() {
                                     <p className="text-xl md:text-2xl text-gray-100 mb-10 max-w-2xl mx-auto font-light drop-shadow-md animate-in fade-in slide-in-from-bottom-5 duration-700 delay-150">
                                         {slide.subtitle}
                                     </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">
-                                        <Button size="lg" className="text-lg px-8" asChild>
-                                            <Link href="/contact">Get a Quote</Link>
-                                        </Button>
-                                        <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white hover:bg-white hover:!text-tfl-blue" asChild>
-                                            <Link href="/services">Our Services</Link>
-                                        </Button>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@ export default function ProjectsPage() {
     const projects = [
         {
             id: 1,
-            title: "Pula Steel Manufacturing",
+            title: "Sherashiya steel plant",
             category: "Manufacturing Logistics",
             stats: "2000+ Tons/Month",
             description: "Transport of raw materials (scrap/sponge iron) and finished steel billets. Supporting vertical integration and export diversification strategies.",
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
             category: "Strategic Growth",
             stats: "SADC Network",
             description: "Expanding operations into Zambia, Namibia, and Mozambique. Facilitating bulk transport services and project logistics across the region.",
-            image: "/services/fig-10.jpg"
+            image: "/TFL AFRICA.png"
         },
         {
             id: 4,
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
             category: "Mining Logistics",
             stats: "End-to-End",
             description: "Comprehensive logistics backbone for Botswana's resource-driven industries. Handling oversized loads and critical mining equipment.",
-            image: "/services/fig-11.png"
+            image: "/Mining support.png"
         }
     ];
 

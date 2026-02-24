@@ -81,9 +81,6 @@ export default function ServicesPage() {
                                     </li>
                                 ))}
                             </ul>
-                            <Button variant="outline" className="w-full group-hover:bg-tfl-blue group-hover:text-white group-hover:border-tfl-blue" asChild>
-                                <Link href="/contact">Get a Quote</Link>
-                            </Button>
                         </div>
                     ))}
                 </div>
