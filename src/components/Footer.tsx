@@ -36,6 +36,7 @@ export default function Footer() {
                             <li><Link href="/about" className="hover:text-white">About Us</Link></li>
                             <li><Link href="/projects" className="hover:text-white">Projects</Link></li>
                             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+                            <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
                         </ul>
                     </div>
 
@@ -48,7 +49,7 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li>Plot No. 54358 Building Marula</li>
                             <li>Prime Plaza CBD, Gaborone</li>
-                            <li>admin@tfl.co.bw</li>
+                            <li>info@tfl.co.bw</li>
                             <li>+267 75 624 347</li>
                         </ul>
                     </div>

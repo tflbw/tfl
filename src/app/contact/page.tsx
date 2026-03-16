@@ -1,8 +1,32 @@
+'use client';
+import { useState } from 'react';
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactPage() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('General Inquiry');
+    const [message, setMessage] = useState('');
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('loading');
+        const res = await fetch('api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, subject, message }),
+        });
+        const data = await res.json();
+        setStatus(data.success ? 'success' : 'error')
+        setName('');
+        setEmail('');
+        setSubject('General Inquiry');
+        setMessage('');
+    };
+
     return (
         <div className="w-full">
             <div className="bg-tfl-blue py-20 text-center text-white">
@@ -55,7 +79,6 @@ export default function ContactPage() {
                                 <div>
                                     <h3 className="font-bold text-tfl-blue text-lg">Email Us</h3>
                                     <p className="text-gray-600">
-                                        admin@tfl.co.bw<br />
                                         info@tfl.co.bw
                                     </p>
                                 </div>
@@ -64,21 +87,21 @@ export default function ContactPage() {
                     </div>
 
                     <div className="bg-gray-50 p-8 rounded-xl border border-gray-100">
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label htmlFor="name" className="text-sm font-medium text-gray-700">Full Name</label>
-                                    <input type="text" id="name" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all" placeholder="John Doe" />
+                                    <input type="text" id="name" value={name} onChange={e => setName(e.target.value)} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all" placeholder="John Doe" required/>
                                 </div>
                                 <div className="space-y-2">
                                     <label htmlFor="email" className="text-sm font-medium text-gray-700">Email Address</label>
-                                    <input type="email" id="email" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all" placeholder="john@example.com" />
+                                    <input type="email" id="email" value={email} onChange={e => setEmail(e.target.value)} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all" placeholder="john@example.com" required/>
                                 </div>
                             </div>
 
                             <div className="space-y-2">
                                 <label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject</label>
-                                <select id="subject" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all">
+                                <select id="subject" value={subject} onChange={e => setSubject(e.target.value)} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all">
                                     <option>General Inquiry</option>
                                     <option>Request a Quote</option>
                                     <option>Status Update</option>
@@ -88,10 +111,15 @@ export default function ContactPage() {
 
                             <div className="space-y-2">
                                 <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
-                                <textarea id="message" rows={4} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all" placeholder="How can we help you?"></textarea>
+                                <textarea id="message" rows={4} value={message} onChange={e => setMessage(e.target.value)} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-tfl-blue focus:ring-1 focus:ring-tfl-blue outline-none transition-all" placeholder="How can we help you?" required></textarea>
                             </div>
 
-                            <Button className="w-full" size="lg">Send Message</Button>
+                            <Button className="w-full" size="lg" type="submit" disabled={status === 'loading'}>
+                                {status === 'loading' ? 'Sending...' : 'Send Message'}
+                            </Button>
+
+                            {status === 'success' && <p className="text-sm text-green-600 text-center">Message sent. We&apos;ll be in touch within 24 hours.</p>}
+                            {status === 'error' && <p className="text-sm text-red-600 text-center">Something went wrong. Please try again or email us directly.</p>}
                         </form>
                     </div>
                 </div>
